@@ -23,7 +23,7 @@ You can change the logging interval globally by calling:
 CompleterEx.reportInterval(Duration(seconds: 30));
 ```
 
-#Logging
+# Logging
 CompleterEx uses the standard log function from dart:developer.
 
 When it logs an Completer it also logs the Stacktrace showing where the Completer was allocated from.
