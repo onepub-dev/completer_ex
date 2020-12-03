@@ -24,9 +24,9 @@ CompleterEx.reportInterval(Duration(seconds: 30));
 ```
 
 # Logging
-CompleterEx uses the standard log function from dart:developer.
+CompleterEx uses the simple_logger to log possible problems.
 
-When it logs an Completer it also logs the Stacktrace showing where the Completer was allocated from.
+When it logs a CompleterEx it also logs the Stacktrace showing where the CompleterEx was allocated from.
 
 
 
