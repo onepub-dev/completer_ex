@@ -36,12 +36,12 @@ class CompleterEx<T> implements Completer<T> {
   }
 
   @override
-  void complete([FutureOr<T> value]) {
+  void complete([FutureOr<T>? value]) {
     _completer.complete(value);
   }
 
   @override
-  void completeError(Object error, [StackTrace stackTrace]) {
+  void completeError(Object error, [StackTrace? stackTrace]) {
     _completer.completeError(error, stackTrace);
   }
 
