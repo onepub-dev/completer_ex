@@ -1,3 +1,6 @@
+# 2.0.1
+Corrected the import statement in the example.
+
 # 2.0.0
 migrated to nnbd
 
