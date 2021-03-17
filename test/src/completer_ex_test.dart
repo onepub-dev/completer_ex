@@ -1,4 +1,3 @@
-
 import 'package:completer_ex/src/completer_ex.dart';
 import 'package:test/test.dart';
 

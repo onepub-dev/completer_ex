@@ -1,3 +1,10 @@
+# 3.0.0
+Added fine grained control over the expected duration and reporting interval.
+
+
+Breaking change
+reportInterval has been changed to setDefaultReportInterval
+
 # 2.0.1
 Corrected the import statement in the example.
 
