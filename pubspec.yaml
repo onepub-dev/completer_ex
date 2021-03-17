@@ -3,7 +3,7 @@ version: 3.0.0
 homepage: https://github.com/bsutton/completer_ex
 description: A wrapper for Completer which logs when the completer doesn't complete in a timel manner.
 environment: 
-  sdk: '>=2.12.0-259.9.beta <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 dependencies: 
   simple_logger: ^1.8.0
   stacktrace_impl: ^2.0.0
