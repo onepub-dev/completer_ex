@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:completer_ex/src/completer_ex.dart';
+import 'package:completer_ex/completer_ex.dart';
 
 void main() {
   /// If you have a normal Completer:
