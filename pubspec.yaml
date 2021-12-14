@@ -1,7 +1,7 @@
 name: completer_ex
 version: 3.0.0
 homepage: https://github.com/bsutton/completer_ex
-description: A wrapper for Completer which logs when the completer doesn't complete in a timel manner.
+description: A wrapper for Completer which logs when the completer doesn't complete in a timely manner.
 environment: 
   sdk: '>=2.12.0 <3.0.0'
 dependencies: 
