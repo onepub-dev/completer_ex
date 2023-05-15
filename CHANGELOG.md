@@ -1,3 +1,7 @@
+# 4.0.0
+- upgraded to dart 3.0
+- added copyright notices.
+
 
 # 3.0.0
 Added fine grained control over the expected duration and reporting interval.
