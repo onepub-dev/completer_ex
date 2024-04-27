@@ -1,3 +1,6 @@
+# 4.0.1
+- added option to passing a debugName to help see what completer is active when in a debugger.
+
 # 4.0.0
 - upgraded to dart 3.0
 - added copyright notices.
