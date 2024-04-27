@@ -23,7 +23,12 @@ class CompleterEx<T> implements Completer<T> {
   /// events.
   /// If null is passed then the value set by [setDefaultReportInterval] is used
   /// which defaults to 10 seconds.
-  CompleterEx({Duration? expectedDuration, Duration? reportInterval})
+  ///
+  /// The [debugName] can be referenced in your debugger to see easily
+  /// see where the [CompleterEx] was created - the [stackTrace] provides
+  /// more detail.
+  CompleterEx(
+      {Duration? expectedDuration, Duration? reportInterval, this.debugName})
       : stackTrace = StackTraceImpl(skipFrames: 1),
         _createdAt = DateTime.now() {
     _expectedDuration = expectedDuration ?? _defaultExpectedDuration;
@@ -39,6 +44,8 @@ class CompleterEx<T> implements Completer<T> {
 
   final StackTraceImpl stackTrace;
   final DateTime _createdAt;
+
+  final String? debugName;
 
   static var _defaultExpectedDuration = const Duration(seconds: 10);
   static var _defaultReportInterval = const Duration(seconds: 10);
@@ -72,7 +79,7 @@ class CompleterEx<T> implements Completer<T> {
 
       logger
         ..setLevel(Level.FINE)
-        ..fine('Completer failed to complete after '
+        ..fine('Completer ${debugName ?? ""} failed to complete after '
             '${DateTime.now().difference(_createdAt)} seconds, '
             'created At: $_createdAt')
         ..fine('CreatedBy: ${stackTrace.formatStackTrace()}');
