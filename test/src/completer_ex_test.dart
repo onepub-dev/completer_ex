@@ -10,9 +10,21 @@ import 'package:test/test.dart';
 void main() {
   test('completer ex ...', () async {
     /// create a completer that never completes
-    await CompleterEx<int>(
-            expectedDuration: const Duration(seconds: 1),
-            reportInterval: const Duration(seconds: 2))
-        .future;
+    final nodebug = CompleterEx<int>(
+        expectedDuration: const Duration(seconds: 1),
+        reportInterval: const Duration(seconds: 2));
+
+    expect(
+        nodebug.toString(),
+        equals(
+            "File: 'C:/Users/bsutt/git/completer_ex/test/src/completer_ex_test.dart' 13"));
+
+    final withdebug = CompleterEx<int>(
+        expectedDuration: const Duration(seconds: 1),
+        reportInterval: const Duration(seconds: 2),
+        debugName: 'a debug name');
+
+    expect(withdebug.toString(), equals('a debug name'));
+    await withdebug.future;
   });
 }

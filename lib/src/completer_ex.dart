@@ -104,4 +104,16 @@ class CompleterEx<T> implements Completer<T> {
 
   @override
   bool get isCompleted => _completer.isCompleted;
+
+  @override
+  String toString() {
+    String output;
+    if (debugName == null) {
+      final st = stackTrace.frames.first;
+      output = '${st.sourceFile} ${st.lineNo}';
+    } else {
+      output = debugName!;
+    }
+    return output;
+  }
 }
