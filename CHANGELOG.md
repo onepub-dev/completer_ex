@@ -1,3 +1,6 @@
+# 4.0.2
+- Added toString to CompleterEx to further help with debugging.
+
 # 4.0.1
 - added option to passing a debugName to help see what completer is active when in a debugger.
 
