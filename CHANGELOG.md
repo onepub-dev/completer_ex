@@ -1,3 +1,6 @@
+# 4.0.3
+- Add debugName to duplicate completion error to make it easier to diagnose the error.
+
 # 4.0.2
 - Added toString to CompleterEx to further help with debugging.
 

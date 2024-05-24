@@ -22,9 +22,9 @@ void main() {
     final withdebug = CompleterEx<int>(
         expectedDuration: const Duration(seconds: 1),
         reportInterval: const Duration(seconds: 2),
-        debugName: 'a debug name');
+        debugName: 'test');
 
-    expect(withdebug.toString(), equals('a debug name'));
+    expect(withdebug.toString(), equals('test'));
     await withdebug.future;
   });
 }

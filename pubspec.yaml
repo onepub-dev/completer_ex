@@ -1,5 +1,5 @@
 name: completer_ex
-version: 4.0.2
+version: 4.0.3
 homepage: https://github.com/bsutton/completer_ex
 description: A wrapper for Completer which logs when the completer doesn't complete in a timely manner.
 environment:

@@ -91,6 +91,9 @@ class CompleterEx<T> implements Completer<T> {
 
   @override
   void complete([FutureOr<T>? value]) {
+    if (_completer.isCompleted) {
+      throw StateError('Future for CompleterEx $debugName already completed');
+    }
     _completer.complete(value);
   }
 
